@@ -1,0 +1,17 @@
+DESCRIPTION="C/C++/ObjC JIT interpreter"
+HOMEPAGE="http://ccod.sourceforge.net/"
+SRC_URI="mirror://sourceforge/ccod/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	rm -f Makefile
+	./configure
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dodir /usr/{bin,include,lib}
+	cyginstall PREFIX=${D}/usr
+}
