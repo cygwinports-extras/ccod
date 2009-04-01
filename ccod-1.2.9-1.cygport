@@ -1,6 +1,7 @@
 DESCRIPTION="C/C++/ObjC JIT interpreter"
 HOMEPAGE="http://ccod.sourceforge.net/"
 SRC_URI="mirror://sourceforge/ccod/${P}.tar.gz"
+SRC_DIR=.
 
 src_compile() {
 	lndirs

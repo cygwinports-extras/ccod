@@ -9,14 +9,15 @@ computer. This is most often the GNU C Compiler, and therefore designed
 to be used with GCC.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  gcc-core
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  gcc4-core
 
 Build requirements:
   binutils-20080624-2
-  cygport-0.4.2-1
-  gcc-core-3.4.4-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://ccod.sourceforge.net/
@@ -44,15 +45,15 @@ Files included in the binary package:
   /usr/bin/ccod.exe
   /usr/include/csp.h
   /usr/lib/libcsp.dll
-  /usr/share/doc/ccod-1.2.8/COPYING
-  /usr/share/doc/ccod-1.2.8/README
+  /usr/share/doc/ccod/COPYING
+  /usr/share/doc/ccod/README
 
 ------------------
 
 Port Notes:
 
------ version 1.2.8-1 -----
-Initial release for Cygwin.
+----- version 1.2.9-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
