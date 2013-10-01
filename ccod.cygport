@@ -8,10 +8,11 @@ prior to being executed. The source files are compiled and executed on the fly.
 This allows for C,C++,ObjC to be treated like a scripting language. But, C Cod
 does not actually do the compiling. Rather it acts as a front-end and uses the
 the C compiler that is installed on the computer."
-REQUIRES="gcc4-core gcc4-g++"
+REQUIRES="gcc-core gcc-g++"
 HOMEPAGE="http://ccod.sourceforge.net/"
-SRC_URI="mirror://sourceforge/ccod/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/ccod/ccod-${VERSION}.tar.gz"
 SRC_DIR=.
+PATCH_URI="1.2.9-missing-includes.patch"
 
 src_compile() {
 	lndirs
